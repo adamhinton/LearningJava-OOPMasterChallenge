@@ -44,6 +44,4 @@ public class Item{
         printItem(getName(), getAdjustedPrice());
     }
 
-
-
 }
