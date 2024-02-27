@@ -1,15 +1,41 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
     }
 }
+
+
+// CHALLENGE INFO:
+//Bill runs a burger joint
+// Meal has three items: hamburger, drink, side item
+// App lets bill select the type of burger, extras for the burger, and the actual pricing
+
+//Need:
+//meal order: Exactly one burger, one drink, one side item
+// Most common meal created w no args. Like regular burger, small coke and fries frex
+// Need drink, and side item
+// drink has: at least type, size, price. Price changes by size/
+// side has: At least type and price
+
+//Burger:
+// burger type, base price, max three extra toppings
+// constructor should include only burger type and price
+// Extra toppings need to be added somehow, and priced according to their type
+
+// Deluxe burger bonus:
+// create deluxe bgr meal that has a set price, so toppings don't increase price. Has room for additional two toppings.
+
+
+
+//Can create other meal orders by spec diff bgrs drinks and sides
+
+
+//MAIN:
+// Creat default meal with no args constr
+// make meal w bgr, and drink and side of your choice, with <=3 extra toppings
+// create a deluxe meal, where all items, drink, side and tpgs up to 5 extras, are included in price
+// For each meal, do:
+    // add toppings to burger
+    // Change size of drink
+    // print itemized list. Includes price of burger, extra toppings, drink price based on size, and side item price
+    // Print total due amount for meal
